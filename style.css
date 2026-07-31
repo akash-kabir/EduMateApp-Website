@@ -185,4 +185,51 @@ footer {
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     .glass-card { padding: 2rem; }
+    .features-grid { grid-template-columns: 1fr; }
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.feature-card {
+    padding: 2rem;
+    margin-top: 0;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--coral);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-link {
+    margin-top: auto;
+    font-weight: 500;
+    display: inline-block;
+    color: var(--coral);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-link:hover {
+    color: #fff;
+    transform: translateX(5px);
 }
