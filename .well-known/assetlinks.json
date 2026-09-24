@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.kiazzenstudio.quack",
+      "package_name": "com.kiazzen.quack",
       "sha256_cert_fingerprints": [
         "38:84:A9:E1:08:6A:6A:F8:CE:36:6E:22:53:35:35:5B:E7:F4:51:BF:6B:DA:8D:31:33:59:CA:C8:AF:AB:6B:77"
       ]
